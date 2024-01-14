@@ -1,11 +1,11 @@
-# Calculator
+<h1>Calculator</h1>
 
-### Just a basic calculator app written in rust, nothing special.
+<h3>Just a basic calculator app written in rust, nothing special.</h3>
 
 
-#### How to download and run the Program.
-Step 1: Create a folder with `mkdir folder_name_here`
-Step 2: `cd folder_name_here`
-Step 3: `git pull https://github.com/Sapphire-code/calculator.git`
-Step 4: `cd calculator/src`
-Step 5: `cargo build`
+<h4>How to download and run the Program.<h4><br>
+Step 1: Create a folder with `mkdir folder_name_here`<br>
+Step 2: `cd folder_name_here`<br>
+Step 3: `git pull https://github.com/Sapphire-code/calculator.git`<br>
+Step 4: `cd calculator/src`<br>
+Step 5: `cargo build`<br>
