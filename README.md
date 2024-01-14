@@ -1,4 +1,4 @@
-<h1>Calculator</h1>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Cascadia+code&pause=1000&color=23B3F7&center=true&random=false&width=435&lines=Rust+Calculator" alt="Typing SVG" /></a>
 
 <h3>A Basic Calculator App Written In Rust.</h3>
 
