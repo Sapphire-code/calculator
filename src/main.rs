@@ -50,9 +50,14 @@ fn main() {
             let secondinputdiv = input("Enter First Number: ");
 
             let first_input_div: i64 = firstinputdiv.parse().unwrap();
+            
             let second_input_div: i64 = secondinputdiv.parse().unwrap();
-
-            println!("Your Output is: {}", (first_input_div / second_input_div));
+            if (second_input_div_input_div == 0) {
+                println!("\n, {}", "Cannot Divide by zero.")
+            } else {
+                println!("Your Output is: {}", (first_input_div / second_input_div));
+            }
+            
         }
         _ => {
             println!("\n{}" ,"Sorry Incorrect Input Was Provided".red());
