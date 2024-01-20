@@ -3,6 +3,7 @@ use std::io::Write;
 extern crate colored;
 use colored::Colorize;
 
+
 fn input(prompt: &str) -> String {
     print!("{}", prompt); // Print the prompt
     io::stdout().flush().expect("Failed to flush stdout"); // Force output
@@ -14,7 +15,7 @@ fn input(prompt: &str) -> String {
 }
 
 fn main() {
-    let parameter_input = input("Enter the following inputs: \n1. add\n2. Subtract\n3. Multiply\n4. Divide\n\nEnter Parameter: ");
+    let parameter_input = input("Enter the following inputs: \n1. add\n2. subtract\n3. multiply\n4. divide\n5. raise\n\nEnter Parameter: ");
 
     match parameter_input.trim() {
         "add" => {
@@ -52,12 +53,25 @@ fn main() {
             let first_input_div: i64 = firstinputdiv.parse().unwrap();
             
             let second_input_div: i64 = secondinputdiv.parse().unwrap();
-            if (second_input_div_input_div == 0) {
+            if second_input_div == 0 {
                 println!("\n, {}", "Cannot Divide by zero.")
             } else {
                 println!("Your Output is: {}", (first_input_div / second_input_div));
             }
             
+        }
+        "raise" => {
+            let firstinputraise = input("Enter Your Number: ");
+            let secondinputraise = input("Raise your number by: ");
+
+            let first_input_raise: i64 = firstinputraise.parse().unwrap();
+            let second_input_raise: i64 = secondinputraise.parse().unwrap();
+
+            let result = i64::pow(first_input_raise, second_input_raise as u32);
+
+            println!("\nYour Output is: {}", result)
+
+
         }
         _ => {
             println!("\n{}" ,"Sorry Incorrect Input Was Provided".red());
